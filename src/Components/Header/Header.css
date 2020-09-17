@@ -1,0 +1,14 @@
+.container{
+    padding-top: 20px;
+}
+a.nav-link{
+    margin-right: 50px;
+}
+.nav_list:hover{
+    color: white;
+    text-decoration: none;
+}
+#news{
+    margin-left: 30px;
+    color: white;
+}
