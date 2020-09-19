@@ -3,15 +3,17 @@ import {Navbar, Nav, Form, FormControl} from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/Logo.png';
 import { Link } from 'react-router-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faSearch} from 'react-icons/fa';
 
 function Header() {
     return (
         <div className="container">
             <Navbar>
-                <Navbar.Brand  className="w-25" style={{height:"50px"}}><img className="img" src={logo} style={{height: '50px', filter: "brightness(800%)"}} alt="Web Logo"/>
-                </Navbar.Brand>
+                <Link to="/home"><Navbar.Brand  className="w-25" style={{height:"50px"}}><img className="img" src={logo} style={{height: '50px', filter: "brightness(800%)"}} alt="Web Logo"/>
+                </Navbar.Brand></Link>
                 <Form inline>
-                    <FormControl type="text" placeholder="Search your destination"  style={{width: "320px"}}/>
+                    <FormControl className="search_icon" type="text" placeholder="Search your destination"  style={{width: "320px"}}/>
                 </Form>
                 <Nav className="mr-auto">
                     <Nav.Link><Link to='/news' className="nav_list" id="news">News</Link></Nav.Link>
