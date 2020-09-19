@@ -1,0 +1,19 @@
+.heading_text{
+    color: rgb(252, 246, 246);
+    margin-top: 10px;
+}
+.room_description{
+    margin-left: 10px;
+}
+.bed_room{
+    margin: 20px 0;
+    color: white;
+}
+.room_wrap{
+    margin-top: 50px;
+    background: rgba(255,255,255,0.145);
+}
+.room_view img{
+    height: 150px;
+    width: 200px;
+}
