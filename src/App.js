@@ -12,6 +12,7 @@ import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import NoMatch from './Components/NoMatch/NoMatch';
 import Destination from './Components/Destination/Destination';
+import Booking from './Components/Booking/Booking';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path='/news'>
           <News></News>
+        </Route>
+        <Route path='/booking'>
+          <Booking></Booking>
         </Route>
         <Route path='/destination'>
           <Destination></Destination>
