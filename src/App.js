@@ -13,8 +13,9 @@ import NoMatch from './Components/NoMatch/NoMatch';
 import Destination from './Components/Destination/Destination';
 import Booking from './Components/Booking/Booking';
 import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
-const UserContext = createContext();
+export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -35,9 +36,9 @@ function App() {
         <Route path='/login'>
           <Login></Login>
         </Route>
-        <Route path='/destination'>
+        <PrivateRoute path='/destination'>
           <Destination></Destination>
-        </Route>
+        </PrivateRoute>
         <Route path='/blog'>
           <Blog></Blog>
         </Route>

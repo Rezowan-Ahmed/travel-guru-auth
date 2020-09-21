@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Navbar, Nav, Form, FormControl} from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/Logo.png';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {faSearch} from 'react-icons/fa';
 
 function Header() {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <div className="container">
             <Navbar>
@@ -20,7 +22,7 @@ function Header() {
                     <Nav.Link><Link to='/destination' className="text-white">Destination</Link></Nav.Link>
                     <Nav.Link><Link to='blog' className="text-white">Blog</Link></Nav.Link>
                     <Nav.Link><Link to='contact' className="text-white">Contact</Link></Nav.Link>
-                    <Link to="/login"><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Login</button></Link> 
+                    {!loggedInUser.email ? <Link to="/login"><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Login</button></Link> : <Link to=""><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Sign out</button></Link>} 
                 </Nav>
             </Navbar>
         </div>
