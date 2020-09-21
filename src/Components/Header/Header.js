@@ -20,7 +20,7 @@ function Header() {
                     <Nav.Link><Link to='/destination' className="text-white">Destination</Link></Nav.Link>
                     <Nav.Link><Link to='blog' className="text-white">Blog</Link></Nav.Link>
                     <Nav.Link><Link to='contact' className="text-white">Contact</Link></Nav.Link>
-                    <button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Login</button>
+                    <Link to="/login"><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Login</button></Link> 
                 </Nav>
             </Navbar>
         </div>
