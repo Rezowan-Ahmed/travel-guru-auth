@@ -1,0 +1,64 @@
+[debug] [2020-09-22T16:07:13.408Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:07:13.418Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2020-09-22T16:07:13.419Z] CLI Version:   8.10.0
+[debug] [2020-09-22T16:07:13.419Z] Platform:      win32
+[debug] [2020-09-22T16:07:13.420Z] Node Version:  v12.18.1
+[debug] [2020-09-22T16:07:13.423Z] Time:          Wed Sep 23 2020 00:07:13 GMT+0800 (China Standard Time)
+[debug] [2020-09-22T16:07:13.424Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:07:13.424Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=314867442&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-09-22T16:08:12.139Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/4QGk47--w2emp_XNON0wWkB2RiaT5W7yuNvKfu3o5biZT_ii4Eq2b1a-XMfLjoI7n0qeUnDH0pTGdhOtyI2LkVY","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-09-22T16:08:33.181Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 172.217.24.13:443
+    at Request._callback (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[debug] [2020-09-22T16:09:21.829Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:09:21.840Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2020-09-22T16:09:21.841Z] CLI Version:   8.10.0
+[debug] [2020-09-22T16:09:21.842Z] Platform:      win32
+[debug] [2020-09-22T16:09:21.842Z] Node Version:  v12.18.1
+[debug] [2020-09-22T16:09:21.846Z] Time:          Wed Sep 23 2020 00:09:21 GMT+0800 (China Standard Time)
+[debug] [2020-09-22T16:09:21.847Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:09:21.847Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1033338040&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-09-22T16:09:39.953Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/4QFLtNujP0crkv9ORo_U9rEOLl5N8x796vXuKRpuz3MqLaP_9EbEwjnqIx2OHSyr0ZxHAS9inNFAHKZut2g5pdQ","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-09-22T16:10:00.994Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 172.217.24.13:443
+    at Request._callback (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\Rezowan Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)

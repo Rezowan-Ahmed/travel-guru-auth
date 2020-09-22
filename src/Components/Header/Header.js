@@ -22,7 +22,18 @@ function Header() {
                     <Nav.Link><Link to='/destination' className="text-white">Destination</Link></Nav.Link>
                     <Nav.Link><Link to='blog' className="text-white">Blog</Link></Nav.Link>
                     <Nav.Link><Link to='contact' className="text-white">Contact</Link></Nav.Link>
-                    {!loggedInUser.email ? <Link to="/login"><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Login</button></Link> : <Link to=""><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>Sign out</button></Link>} 
+
+                    {!loggedInUser.email ? 
+                    <Link to="/login"><button className='btn'  style={{background: "orange", padding: "10px 30px", borderRadius: "7px"}}>
+                        Login
+                    </button></Link> 
+                    : 
+                    <Link to=""><button className='btn'  style={{background: "orange", padding: "10px 20px", borderRadius: "7px"}}>
+                        Sign out
+                    </button></Link>} 
+                    <p><small className='user_name'>{!loggedInUser.email ? 'User' : `${loggedInUser.name}`}</small>
+                        
+                    </p>
                 </Nav>
             </Navbar>
         </div>
